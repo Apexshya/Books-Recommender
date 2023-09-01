@@ -29,18 +29,35 @@
     </div>
     {% if data %}
 
+    
+
+
+
+
+
+    {% for i in data %}
+
 
     <div class="col-md-2" style="margin-top:50px">
         <div class="card">
             <div class="card-body">
-                <img clas="card-img-top" src="http://images.amazon.com/images/P/0439136350.01.MZZZZZZZ.jpg">
-                <p>fgfh</p>
-                <p>hhfhgyg</P>
+                <img clas="card-img-top" src="{{i[2]}}">
+                <p>{{i[0]}}</p>
+                <p>{{i[1]}}</P>
                     
         </div>
     </div>
 
 </div>
+    
+
+
+
+
+
+    {% endfor %}
+
+
     
 
 
